@@ -6,6 +6,11 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/**
+ *
+ * @author dnsgbl
+ */
 public final class ProfileManager {
     private static UserProfile usedProfile;
     private static List<UserProfile> allProfiles;
