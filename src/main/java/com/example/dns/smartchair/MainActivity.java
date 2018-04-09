@@ -24,6 +24,10 @@ import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ *
+ * @author dnsgbl
+ */
 public class MainActivity extends AppCompatActivity {
     //Layout
     Button btnChange;
@@ -70,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         nfcAdapter = NfcAdapter.getDefaultAdapter(this);
         if (nfcAdapter == null) {
 
-            Toast.makeText(this, "Dieses Gerät unterstützt kein NFC!", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Dieses GerÃ¤t unterstÃ¼tzt kein NFC!", Toast.LENGTH_LONG).show();
             //finish();
         }
 
