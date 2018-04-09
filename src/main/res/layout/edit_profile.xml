@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTable"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <TableRow>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:padding="15dp"
+                android:text="Height:"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="20dp" />
+
+            <SeekBar
+                android:id="@+id/seekBarHeight"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:clickable="false"
+                android:max="10"
+                android:padding="15dp"
+                android:progress="0" />
+
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:padding="15dp"
+                android:text="Seat:"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="20dp" />
+
+            <SeekBar
+                android:id="@+id/seekBarSeatsquab"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:max="10"
+                android:progress="0"
+                android:padding="15dp"
+                android:layout_margin="15dp"/>
+
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:padding="15dp"
+                android:text="Seat back:"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="20dp" />
+
+            <SeekBar
+                android:id="@+id/seekBarSeatback"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:max="10"
+                android:progress="0"
+                android:padding="15dp"
+                android:layout_margin="15dp"
+                />
+
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:padding="15dp"
+                android:text="Name:"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="20dp" />
+            <EditText
+                android:id="@+id/profilename"
+                android:layout_margin="15dp"
+                android:padding="15dp"
+                android:textSize="20dp"
+                android:maxLength="12"
+                android:textColor="#000000"/>
+        </TableRow>
+        <View
+            android:layout_height="3dp"
+            android:background="#000000"
+            />
+    </TableLayout>
+
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_background"
+        android:padding="15dp"
+        android:text="Save"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="20dp"
+        android:layout_above="@+id/imageView2"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/chairwordlogo"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/selectedHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:layout_marginBottom="16dp"
+        android:layout_above="@+id/textView10"
+        android:layout_alignStart="@+id/selectedSeat" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Height:"
+        android:textColor="@android:color/black"
+        android:layout_alignBaseline="@+id/selectedHeight"
+        android:layout_alignBottom="@+id/selectedHeight"
+        android:layout_alignEnd="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seat:"
+        android:textColor="@android:color/black"
+        android:layout_alignBaseline="@+id/selectedSeat"
+        android:layout_alignBottom="@+id/selectedSeat"
+        android:layout_alignEnd="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/selectedSeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:layout_above="@+id/selectedSeatBack"
+        android:layout_alignStart="@+id/selectedSeatBack"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seat back:"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="25dp"
+        android:layout_above="@+id/btnSave"
+        android:layout_alignStart="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/selectedSeatBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView13"
+        android:layout_toEndOf="@+id/imageView2"
+        android:text="0"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/labelSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your settings are:"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/textView8"
+        android:layout_alignEnd="@+id/textView8" />
+
+</RelativeLayout>

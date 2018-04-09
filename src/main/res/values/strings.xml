@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PSEAppV2</string>
+    <string name="file_profiles">Profiles.txt</string>
+    <string name="file_used">Used.txt</string>
+</resources>
