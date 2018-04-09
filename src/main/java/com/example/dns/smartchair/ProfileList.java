@@ -13,6 +13,10 @@ import android.widget.ListView;
 
 import java.util.List;
 
+/**
+ *
+ * @author dnsgbl
+ */
 public class ProfileList extends AppCompatActivity {
     Button btnCreate;
     ListView lv;
@@ -82,7 +86,7 @@ public class ProfileList extends AppCompatActivity {
     private void createAlertDialog(final int pos){
         AlertDialog.Builder dialog = new AlertDialog.Builder(ProfileList.this);
         dialog.setTitle("Achtung!");
-        dialog.setMessage("Wollen Sie dieses Profil wirklich löschen?");
+        dialog.setMessage("Wollen Sie dieses Profil wirklich lÃ¶schen?");
         dialog.setPositiveButton("Ja", new DialogInterface.OnClickListener(){
             public void onClick(DialogInterface dialog, int id){
                 boolean deleted = ProfileManager.deleteProfile(pos, getApplicationContext());
