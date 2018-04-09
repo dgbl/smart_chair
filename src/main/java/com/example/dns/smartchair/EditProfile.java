@@ -10,6 +10,10 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+/**
+ *
+ * @author dnsgbl
+ */
 public class EditProfile extends AppCompatActivity {
     Button btnSave;
     boolean newItem;
