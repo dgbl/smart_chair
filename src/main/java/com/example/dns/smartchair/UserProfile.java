@@ -1,5 +1,9 @@
 package com.example.dns.smartchair;
 
+/**
+ *
+ * @author dnsgbl
+ */
 public class UserProfile {
     private String name;
     private int seatSquabTilt;      //Neigung der Sitzfläche
